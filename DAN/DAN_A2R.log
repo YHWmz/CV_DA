@@ -1,0 +1,22 @@
+Namespace(backbone='resnet50', batch_size=32, config='DAN/DAN.yaml', data_dir='/DB/rhome/yuhaowang/CV_DA/OfficeHomeDataset_10072016/', device=device(type='cuda'), early_stop=0, epoch_based_training=False, lr=0.003, lr_decay=0.75, lr_gamma=0.0003, lr_scheduler=True, momentum=0.9, n_epoch=20, n_iter_per_epoch=500, num_workers=3, seed=1, src_domain='Art', tgt_domain='Real_World', transfer_loss='mmd', transfer_loss_weight=0.5, use_bottleneck=True, weight_decay=0.0005)
+Epoch: [ 1/20], cls_loss: 2.2049, transfer_loss: 0.1099, total_Loss: 2.2599, test_loss 1.193098, test_acc: 67.0415
+Epoch: [ 2/20], cls_loss: 0.5336, transfer_loss: 0.1053, total_Loss: 0.5863, test_loss 0.926842, test_acc: 73.7434
+Epoch: [ 3/20], cls_loss: 0.2096, transfer_loss: 0.1070, total_Loss: 0.2631, test_loss 0.918516, test_acc: 74.5008
+Epoch: [ 4/20], cls_loss: 0.1066, transfer_loss: 0.1082, total_Loss: 0.1607, test_loss 0.907934, test_acc: 74.6156
+Epoch: [ 5/20], cls_loss: 0.0675, transfer_loss: 0.1080, total_Loss: 0.1215, test_loss 0.921080, test_acc: 75.2353
+Epoch: [ 6/20], cls_loss: 0.0509, transfer_loss: 0.1089, total_Loss: 0.1054, test_loss 0.948849, test_acc: 74.4779
+Epoch: [ 7/20], cls_loss: 0.0425, transfer_loss: 0.1091, total_Loss: 0.0971, test_loss 0.956312, test_acc: 74.6844
+Epoch: [ 8/20], cls_loss: 0.0376, transfer_loss: 0.1100, total_Loss: 0.0926, test_loss 0.962565, test_acc: 74.2483
+Epoch: [ 9/20], cls_loss: 0.0343, transfer_loss: 0.1098, total_Loss: 0.0891, test_loss 0.972142, test_acc: 75.0057
+Epoch: [10/20], cls_loss: 0.0320, transfer_loss: 0.1101, total_Loss: 0.0870, test_loss 0.954944, test_acc: 75.0746
+Epoch: [11/20], cls_loss: 0.0291, transfer_loss: 0.1106, total_Loss: 0.0844, test_loss 0.987085, test_acc: 74.8221
+Epoch: [12/20], cls_loss: 0.0276, transfer_loss: 0.1105, total_Loss: 0.0828, test_loss 0.961060, test_acc: 74.7992
+Epoch: [13/20], cls_loss: 0.0272, transfer_loss: 0.1108, total_Loss: 0.0826, test_loss 0.937417, test_acc: 75.3500
+Epoch: [14/20], cls_loss: 0.0271, transfer_loss: 0.1121, total_Loss: 0.0832, test_loss 0.970635, test_acc: 74.8451
+Epoch: [15/20], cls_loss: 0.0263, transfer_loss: 0.1115, total_Loss: 0.0821, test_loss 0.957156, test_acc: 75.1205
+Epoch: [16/20], cls_loss: 0.0254, transfer_loss: 0.1120, total_Loss: 0.0814, test_loss 0.968763, test_acc: 74.3631
+Epoch: [17/20], cls_loss: 0.0255, transfer_loss: 0.1120, total_Loss: 0.0814, test_loss 0.952605, test_acc: 74.9828
+Epoch: [18/20], cls_loss: 0.0241, transfer_loss: 0.1117, total_Loss: 0.0800, test_loss 0.953112, test_acc: 75.2123
+Epoch: [19/20], cls_loss: 0.0235, transfer_loss: 0.1118, total_Loss: 0.0794, test_loss 0.967198, test_acc: 74.7074
+Epoch: [20/20], cls_loss: 0.0239, transfer_loss: 0.1119, total_Loss: 0.0799, test_loss 0.955681, test_acc: 75.1893
+Transfer result: 75.3500

@@ -1,0 +1,33 @@
+Namespace(backbone='resnet50', batch_size=32, config='CoorAtt/cooratt.yaml', data_dir='/DB/rhome/yuhaowang/CV_DA/OfficeHomeDataset_10072016', device=device(type='cuda'), early_stop=15, epoch_based_training=False, lr=0.001, lr_decay=0.75, lr_gamma=0.0003, lr_scheduler=True, momentum=0.9, n_epoch=70, n_iter_per_epoch=300, num_workers=3, seed=1, src_domain='Product', tgt_domain='Art', transfer_loss='bnm', transfer_loss_weight=1.0, use_bottleneck=True, weight_decay=0.0005)
+Epoch: [ 1/70], cls_loss: 2.2436, transfer_loss: -0.1461, total_Loss: 2.0975, test_loss 2.466692, test_acc: 44.8290
+Epoch: [ 2/70], cls_loss: 0.9540, transfer_loss: -0.3267, total_Loss: 0.6272, test_loss 1.961804, test_acc: 53.3581
+Epoch: [ 3/70], cls_loss: 0.5951, transfer_loss: -0.4349, total_Loss: 0.1602, test_loss 1.731733, test_acc: 57.4784
+Epoch: [ 4/70], cls_loss: 0.4212, transfer_loss: -0.5139, total_Loss: -0.0927, test_loss 1.619978, test_acc: 60.4038
+Epoch: [ 5/70], cls_loss: 0.3243, transfer_loss: -0.5666, total_Loss: -0.2423, test_loss 1.566697, test_acc: 61.9695
+Epoch: [ 6/70], cls_loss: 0.2548, transfer_loss: -0.6060, total_Loss: -0.3511, test_loss 1.547874, test_acc: 62.5051
+Epoch: [ 7/70], cls_loss: 0.2088, transfer_loss: -0.6328, total_Loss: -0.4240, test_loss 1.553465, test_acc: 63.1232
+Epoch: [ 8/70], cls_loss: 0.1764, transfer_loss: -0.6609, total_Loss: -0.4845, test_loss 1.582322, test_acc: 63.4116
+Epoch: [ 9/70], cls_loss: 0.1579, transfer_loss: -0.6815, total_Loss: -0.5236, test_loss 1.598709, test_acc: 63.5352
+Epoch: [10/70], cls_loss: 0.1363, transfer_loss: -0.6966, total_Loss: -0.5604, test_loss 1.637000, test_acc: 63.8649
+Epoch: [11/70], cls_loss: 0.1166, transfer_loss: -0.7121, total_Loss: -0.5956, test_loss 1.661800, test_acc: 63.7824
+Epoch: [12/70], cls_loss: 0.1111, transfer_loss: -0.7247, total_Loss: -0.6136, test_loss 1.691545, test_acc: 64.0709
+Epoch: [13/70], cls_loss: 0.0995, transfer_loss: -0.7329, total_Loss: -0.6333, test_loss 1.725638, test_acc: 64.1945
+Epoch: [14/70], cls_loss: 0.0915, transfer_loss: -0.7451, total_Loss: -0.6535, test_loss 1.767005, test_acc: 64.3181
+Epoch: [15/70], cls_loss: 0.0860, transfer_loss: -0.7516, total_Loss: -0.6656, test_loss 1.806169, test_acc: 64.3593
+Epoch: [16/70], cls_loss: 0.0800, transfer_loss: -0.7589, total_Loss: -0.6789, test_loss 1.827003, test_acc: 64.5241
+Epoch: [17/70], cls_loss: 0.0738, transfer_loss: -0.7629, total_Loss: -0.6891, test_loss 1.907342, test_acc: 64.1121
+Epoch: [18/70], cls_loss: 0.0709, transfer_loss: -0.7695, total_Loss: -0.6986, test_loss 1.895284, test_acc: 64.4417
+Epoch: [19/70], cls_loss: 0.0646, transfer_loss: -0.7754, total_Loss: -0.7108, test_loss 1.926720, test_acc: 64.3181
+Epoch: [20/70], cls_loss: 0.0612, transfer_loss: -0.7806, total_Loss: -0.7195, test_loss 1.984897, test_acc: 63.8649
+Epoch: [21/70], cls_loss: 0.0594, transfer_loss: -0.7823, total_Loss: -0.7229, test_loss 2.016719, test_acc: 64.0709
+Epoch: [22/70], cls_loss: 0.0566, transfer_loss: -0.7892, total_Loss: -0.7326, test_loss 2.013947, test_acc: 64.3181
+Epoch: [23/70], cls_loss: 0.0536, transfer_loss: -0.7902, total_Loss: -0.7367, test_loss 2.034974, test_acc: 63.9885
+Epoch: [24/70], cls_loss: 0.0491, transfer_loss: -0.7948, total_Loss: -0.7456, test_loss 2.100837, test_acc: 64.1945
+Epoch: [25/70], cls_loss: 0.0494, transfer_loss: -0.7964, total_Loss: -0.7469, test_loss 2.097955, test_acc: 64.0709
+Epoch: [26/70], cls_loss: 0.0483, transfer_loss: -0.7992, total_Loss: -0.7509, test_loss 2.114060, test_acc: 64.0297
+Epoch: [27/70], cls_loss: 0.0461, transfer_loss: -0.8014, total_Loss: -0.7553, test_loss 2.148837, test_acc: 64.1945
+Epoch: [28/70], cls_loss: 0.0446, transfer_loss: -0.8049, total_Loss: -0.7603, test_loss 2.181604, test_acc: 64.1533
+Epoch: [29/70], cls_loss: 0.0434, transfer_loss: -0.8023, total_Loss: -0.7588, test_loss 2.149541, test_acc: 64.4005
+Epoch: [30/70], cls_loss: 0.0411, transfer_loss: -0.8056, total_Loss: -0.7645, test_loss 2.214714, test_acc: 64.0297
+Epoch: [31/70], cls_loss: 0.0388, transfer_loss: -0.8061, total_Loss: -0.7673, test_loss 2.235016, test_acc: 64.0297
+Transfer result: 64.5241

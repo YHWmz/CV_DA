@@ -1,0 +1,65 @@
+Namespace(backbone='resnet50', batch_size=32, config='CoorAtt/cooratt.yaml', data_dir='/DB/rhome/yuhaowang/CV_DA/OfficeHomeDataset_10072016', device=device(type='cuda'), early_stop=15, epoch_based_training=False, lr=0.001, lr_decay=0.75, lr_gamma=0.0003, lr_scheduler=True, momentum=0.9, n_epoch=70, n_iter_per_epoch=300, num_workers=3, seed=1, src_domain='Real_World', tgt_domain='Art', transfer_loss='bnm', transfer_loss_weight=1.0, use_bottleneck=True, weight_decay=0.0005)
+Epoch: [ 1/70], cls_loss: 2.3368, transfer_loss: -0.1801, total_Loss: 2.1567, test_loss 1.954932, test_acc: 60.5686
+Epoch: [ 2/70], cls_loss: 1.0680, transfer_loss: -0.3865, total_Loss: 0.6815, test_loss 1.496133, test_acc: 66.6255
+Epoch: [ 3/70], cls_loss: 0.7083, transfer_loss: -0.4995, total_Loss: 0.2088, test_loss 1.326141, test_acc: 68.6444
+Epoch: [ 4/70], cls_loss: 0.5212, transfer_loss: -0.5701, total_Loss: -0.0489, test_loss 1.239228, test_acc: 68.6856
+Epoch: [ 5/70], cls_loss: 0.4108, transfer_loss: -0.6129, total_Loss: -0.2021, test_loss 1.200802, test_acc: 69.3449
+Epoch: [ 6/70], cls_loss: 0.3362, transfer_loss: -0.6482, total_Loss: -0.3119, test_loss 1.184976, test_acc: 70.0453
+Epoch: [ 7/70], cls_loss: 0.2859, transfer_loss: -0.6659, total_Loss: -0.3800, test_loss 1.192853, test_acc: 69.6745
+Epoch: [ 8/70], cls_loss: 0.2442, transfer_loss: -0.6903, total_Loss: -0.4461, test_loss 1.197615, test_acc: 71.0342
+Epoch: [ 9/70], cls_loss: 0.2166, transfer_loss: -0.7061, total_Loss: -0.4895, test_loss 1.220637, test_acc: 70.9930
+Epoch: [10/70], cls_loss: 0.1874, transfer_loss: -0.7176, total_Loss: -0.5302, test_loss 1.259548, test_acc: 70.4162
+Epoch: [11/70], cls_loss: 0.1691, transfer_loss: -0.7306, total_Loss: -0.5614, test_loss 1.264933, test_acc: 70.9930
+Epoch: [12/70], cls_loss: 0.1602, transfer_loss: -0.7397, total_Loss: -0.5795, test_loss 1.306867, test_acc: 70.9518
+Epoch: [13/70], cls_loss: 0.1338, transfer_loss: -0.7470, total_Loss: -0.6132, test_loss 1.300568, test_acc: 71.4050
+Epoch: [14/70], cls_loss: 0.1295, transfer_loss: -0.7554, total_Loss: -0.6260, test_loss 1.337805, test_acc: 71.8583
+Epoch: [15/70], cls_loss: 0.1182, transfer_loss: -0.7664, total_Loss: -0.6482, test_loss 1.347593, test_acc: 71.7759
+Epoch: [16/70], cls_loss: 0.1100, transfer_loss: -0.7687, total_Loss: -0.6587, test_loss 1.373593, test_acc: 71.5698
+Epoch: [17/70], cls_loss: 0.1005, transfer_loss: -0.7725, total_Loss: -0.6719, test_loss 1.418951, test_acc: 71.6522
+Epoch: [18/70], cls_loss: 0.0967, transfer_loss: -0.7781, total_Loss: -0.6814, test_loss 1.438387, test_acc: 71.8583
+Epoch: [19/70], cls_loss: 0.0929, transfer_loss: -0.7852, total_Loss: -0.6922, test_loss 1.432751, test_acc: 72.0231
+Epoch: [20/70], cls_loss: 0.0850, transfer_loss: -0.7886, total_Loss: -0.7036, test_loss 1.465662, test_acc: 72.1467
+Epoch: [21/70], cls_loss: 0.0811, transfer_loss: -0.7874, total_Loss: -0.7062, test_loss 1.523819, test_acc: 72.0643
+Epoch: [22/70], cls_loss: 0.0785, transfer_loss: -0.7920, total_Loss: -0.7135, test_loss 1.502475, test_acc: 72.2291
+Epoch: [23/70], cls_loss: 0.0749, transfer_loss: -0.7960, total_Loss: -0.7211, test_loss 1.524041, test_acc: 72.4351
+Epoch: [24/70], cls_loss: 0.0686, transfer_loss: -0.7984, total_Loss: -0.7297, test_loss 1.559144, test_acc: 72.3115
+Epoch: [25/70], cls_loss: 0.0684, transfer_loss: -0.8013, total_Loss: -0.7329, test_loss 1.577721, test_acc: 72.1055
+Epoch: [26/70], cls_loss: 0.0677, transfer_loss: -0.8064, total_Loss: -0.7387, test_loss 1.591896, test_acc: 72.3527
+Epoch: [27/70], cls_loss: 0.0640, transfer_loss: -0.8080, total_Loss: -0.7440, test_loss 1.576865, test_acc: 72.5999
+Epoch: [28/70], cls_loss: 0.0585, transfer_loss: -0.8067, total_Loss: -0.7482, test_loss 1.635113, test_acc: 72.3115
+Epoch: [29/70], cls_loss: 0.0618, transfer_loss: -0.8061, total_Loss: -0.7444, test_loss 1.651750, test_acc: 72.4351
+Epoch: [30/70], cls_loss: 0.0575, transfer_loss: -0.8128, total_Loss: -0.7553, test_loss 1.647489, test_acc: 72.5587
+Epoch: [31/70], cls_loss: 0.0577, transfer_loss: -0.8135, total_Loss: -0.7558, test_loss 1.654326, test_acc: 72.4351
+Epoch: [32/70], cls_loss: 0.0529, transfer_loss: -0.8133, total_Loss: -0.7604, test_loss 1.685356, test_acc: 72.3939
+Epoch: [33/70], cls_loss: 0.0543, transfer_loss: -0.8170, total_Loss: -0.7627, test_loss 1.657544, test_acc: 72.8059
+Epoch: [34/70], cls_loss: 0.0490, transfer_loss: -0.8171, total_Loss: -0.7681, test_loss 1.707365, test_acc: 72.5587
+Epoch: [35/70], cls_loss: 0.0517, transfer_loss: -0.8188, total_Loss: -0.7672, test_loss 1.730585, test_acc: 72.7235
+Epoch: [36/70], cls_loss: 0.0499, transfer_loss: -0.8211, total_Loss: -0.7713, test_loss 1.714192, test_acc: 72.9707
+Epoch: [37/70], cls_loss: 0.0454, transfer_loss: -0.8210, total_Loss: -0.7756, test_loss 1.725902, test_acc: 73.0532
+Epoch: [38/70], cls_loss: 0.0485, transfer_loss: -0.8184, total_Loss: -0.7699, test_loss 1.753248, test_acc: 72.8059
+Epoch: [39/70], cls_loss: 0.0465, transfer_loss: -0.8269, total_Loss: -0.7805, test_loss 1.743638, test_acc: 72.8471
+Epoch: [40/70], cls_loss: 0.0439, transfer_loss: -0.8218, total_Loss: -0.7779, test_loss 1.757408, test_acc: 72.8471
+Epoch: [41/70], cls_loss: 0.0429, transfer_loss: -0.8247, total_Loss: -0.7817, test_loss 1.787554, test_acc: 72.8471
+Epoch: [42/70], cls_loss: 0.0435, transfer_loss: -0.8267, total_Loss: -0.7832, test_loss 1.804630, test_acc: 72.6411
+Epoch: [43/70], cls_loss: 0.0426, transfer_loss: -0.8291, total_Loss: -0.7866, test_loss 1.826140, test_acc: 72.8471
+Epoch: [44/70], cls_loss: 0.0424, transfer_loss: -0.8261, total_Loss: -0.7837, test_loss 1.807643, test_acc: 72.9295
+Epoch: [45/70], cls_loss: 0.0427, transfer_loss: -0.8293, total_Loss: -0.7865, test_loss 1.834785, test_acc: 72.5587
+Epoch: [46/70], cls_loss: 0.0409, transfer_loss: -0.8264, total_Loss: -0.7855, test_loss 1.827544, test_acc: 73.0119
+Epoch: [47/70], cls_loss: 0.0410, transfer_loss: -0.8298, total_Loss: -0.7888, test_loss 1.812431, test_acc: 72.7235
+Epoch: [48/70], cls_loss: 0.0399, transfer_loss: -0.8323, total_Loss: -0.7924, test_loss 1.836291, test_acc: 73.1768
+Epoch: [49/70], cls_loss: 0.0354, transfer_loss: -0.8299, total_Loss: -0.7945, test_loss 1.875575, test_acc: 72.8883
+Epoch: [50/70], cls_loss: 0.0378, transfer_loss: -0.8321, total_Loss: -0.7943, test_loss 1.872452, test_acc: 73.0119
+Epoch: [51/70], cls_loss: 0.0357, transfer_loss: -0.8343, total_Loss: -0.7986, test_loss 1.894766, test_acc: 72.8883
+Epoch: [52/70], cls_loss: 0.0366, transfer_loss: -0.8290, total_Loss: -0.7924, test_loss 1.848062, test_acc: 72.9295
+Epoch: [53/70], cls_loss: 0.0369, transfer_loss: -0.8320, total_Loss: -0.7950, test_loss 1.907399, test_acc: 72.9707
+Epoch: [54/70], cls_loss: 0.0381, transfer_loss: -0.8333, total_Loss: -0.7953, test_loss 1.921290, test_acc: 72.5999
+Epoch: [55/70], cls_loss: 0.0364, transfer_loss: -0.8342, total_Loss: -0.7978, test_loss 1.917535, test_acc: 72.8059
+Epoch: [56/70], cls_loss: 0.0353, transfer_loss: -0.8341, total_Loss: -0.7988, test_loss 1.929427, test_acc: 72.7647
+Epoch: [57/70], cls_loss: 0.0316, transfer_loss: -0.8353, total_Loss: -0.8037, test_loss 1.898995, test_acc: 72.8883
+Epoch: [58/70], cls_loss: 0.0347, transfer_loss: -0.8330, total_Loss: -0.7984, test_loss 1.926203, test_acc: 72.9295
+Epoch: [59/70], cls_loss: 0.0331, transfer_loss: -0.8359, total_Loss: -0.8028, test_loss 1.935113, test_acc: 72.8059
+Epoch: [60/70], cls_loss: 0.0345, transfer_loss: -0.8365, total_Loss: -0.8021, test_loss 1.919170, test_acc: 72.8883
+Epoch: [61/70], cls_loss: 0.0328, transfer_loss: -0.8374, total_Loss: -0.8046, test_loss 1.935201, test_acc: 72.9295
+Epoch: [62/70], cls_loss: 0.0339, transfer_loss: -0.8380, total_Loss: -0.8041, test_loss 1.949294, test_acc: 72.8059
+Epoch: [63/70], cls_loss: 0.0341, transfer_loss: -0.8390, total_Loss: -0.8049, test_loss 1.946549, test_acc: 72.8059
+Transfer result: 73.1768

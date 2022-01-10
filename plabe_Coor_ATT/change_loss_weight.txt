@@ -1,0 +1,450 @@
+Namespace(backbone='resnet50', batch_size=32, config='plabe_Coor_ATT/plabel_coor_att.yaml',
+data_dir='/DB/rhome/yuhaowang/CV_DA/OfficeHomeDataset_10072016', device=device(type='cuda'), early_stop=20,
+epoch_based_training=False, is_balance=False, lr=0.001, lr_decay=0.75, lr_gamma=0.0003, lr_scheduler=True,
+momentum=0.9, n_epoch=300, n_iter_per_epoch=300, num_workers=3, seed=1, src_domain='Clipart', tgt_domain='Real_World',
+transfer_loss='bnm', transfer_loss_weight=1.0, use_bottleneck=True, weight_decay=0.0005)
+balance para is : False
+batch_num is  136
+Epoch: [ 1/300], cls_loss: 3.4794, transfer_loss: -0.0895, total_Loss: 3.3898, test_loss 2.922409, test_acc: 35.8733
+Epoch: [ 2/300], cls_loss: 2.4308, transfer_loss: -0.2009, total_Loss: 2.2298, test_loss 2.353564, test_acc: 46.6146
+Epoch: [ 3/300], cls_loss: 1.9244, transfer_loss: -0.2906, total_Loss: 1.6338, test_loss 2.011081, test_acc: 53.9591
+Epoch: [ 4/300], cls_loss: 1.5655, transfer_loss: -0.3739, total_Loss: 1.1916, test_loss 1.753573, test_acc: 58.1822
+Epoch: [ 5/300], cls_loss: 1.3099, transfer_loss: -0.4349, total_Loss: 0.8750, test_loss 1.604228, test_acc: 59.8806
+Epoch: [ 6/300], cls_loss: 1.1161, transfer_loss: -0.4841, total_Loss: 0.6319, test_loss 1.475807, test_acc: 62.4053
+Epoch: [ 7/300], cls_loss: 0.9787, transfer_loss: -0.5214, total_Loss: 0.4573, test_loss 1.399916, test_acc: 63.8054
+Epoch: [ 8/300], cls_loss: 0.8471, transfer_loss: -0.5488, total_Loss: 0.2983, test_loss 1.356558, test_acc: 64.4251
+Epoch: [ 9/300], cls_loss: 0.7705, transfer_loss: -0.5753, total_Loss: 0.1952, test_loss 1.265230, test_acc: 66.1235
+Epoch: [10/300], cls_loss: 0.6869, transfer_loss: -0.5962, total_Loss: 0.0906, test_loss 1.222929, test_acc: 67.1104
+Epoch: [11/300], cls_loss: 0.6109, transfer_loss: -0.6128, total_Loss: -0.0020, test_loss 1.223041, test_acc: 67.8907
+Epoch: [12/300], cls_loss: 0.5691, transfer_loss: -0.6310, total_Loss: -0.0619, test_loss 1.197699, test_acc: 68.1891
+Epoch: [13/300], cls_loss: 0.5178, transfer_loss: -0.6444, total_Loss: -0.1266, test_loss 1.177539, test_acc: 68.9236
+Epoch: [14/300], cls_loss: 0.4773, transfer_loss: -0.6544, total_Loss: -0.1771, test_loss 1.186150, test_acc: 69.1301
+Epoch: [15/300], cls_loss: 0.4333, transfer_loss: -0.6638, total_Loss: -0.2304, test_loss 1.143559, test_acc: 69.6351
+Epoch: [16/300], cls_loss: 0.4010, transfer_loss: -0.6762, total_Loss: -0.2752, test_loss 1.131962, test_acc: 70.2548
+Epoch: [17/300], cls_loss: 0.3862, transfer_loss: -0.6868, total_Loss: -0.3006, test_loss 1.120615, test_acc: 70.8515
+Epoch: [18/300], cls_loss: 0.3495, transfer_loss: -0.6957, total_Loss: -0.3463, test_loss 1.133065, test_acc: 70.4613
+Epoch: [19/300], cls_loss: 0.3313, transfer_loss: -0.7005, total_Loss: -0.3692, test_loss 1.120483, test_acc: 71.1269
+Epoch: [20/300], cls_loss: 0.3112, transfer_loss: -0.7079, total_Loss: -0.3967, test_loss 1.119537, test_acc: 71.3564
+Transfer result: 71.3564
+tensor([18.,  1., 63., 11., 16., 22., 35., 56., 64., 30., 53.,  9., 28., 42.,
+        20.,  4., 59.,  6., 41., 21., 43., 49., 57., 19., 42., 61., 22., 36.,
+         3., 30., 52., 15.])
+0.42784926470588236
+Accuracy = 72.17% -> 74.38%
+
+[18  1  6 52 51 22 35 56 64 30 53  9 37 42 20  4 59  6 15 21  6 49 57 19
+ 42 53 22 36  3 30  3 59]
+Epoch: [21/300], cls_loss: 0.3047, transfer_loss: -0.8491, total_Loss: -0.3173, test_loss 1.099764, test_acc: 72.2974
+Epoch: [22/300], cls_loss: 0.3004, transfer_loss: -0.7269, total_Loss: -0.4265, test_loss 1.097750, test_acc: 72.6417
+Epoch: [23/300], cls_loss: 0.2794, transfer_loss: -0.7233, total_Loss: -0.4440, test_loss 1.103715, test_acc: 73.0089
+tensor([54., 44., 57., 23., 50.,  9., 42., 43., 12., 64., 12., 11.,  4., 28.,
+        20., 38., 22.,  3., 31., 28., 49., 61., 43., 34., 60., 29., 64.,  0.,
+        29., 14., 19., 62.])
+0.4016544117647059
+Accuracy = 73.18% -> 75.25%
+
+[54  8 40 17 50  9 42 43 12 64 29 11  4 28 20 30 22  3 31 28 49 61 43 34
+ 59 29 64 47 29 14 19 55]
+Epoch: [24/300], cls_loss: 0.2711, transfer_loss: -0.8505, total_Loss: -0.3428, test_loss 1.086619, test_acc: 73.1467
+Epoch: [25/300], cls_loss: 0.2778, transfer_loss: -0.7350, total_Loss: -0.4573, test_loss 1.083969, test_acc: 73.3762
+Epoch: [26/300], cls_loss: 0.2537, transfer_loss: -0.7368, total_Loss: -0.4831, test_loss 1.106188, test_acc: 73.3303
+tensor([46., 30., 63.,  1.,  3., 25.,  6.,  3., 47., 15., 52., 64., 25., 36.,
+        59., 37., 38., 18., 47., 36., 46., 44., 41.,  7., 50., 14., 41., 52.,
+         1., 20., 18.,  1.])
+0.39016544117647056
+Accuracy = 73.07% -> 75.62%
+
+[ 3 30 63  1  3 25  6 47 47 35 23 64 25 36 59 37 38 18 47 57 51 62 41  7
+ 50 14 41 52 27 20 18  1]
+Epoch: [27/300], cls_loss: 0.2370, transfer_loss: -0.8669, total_Loss: -0.3574, test_loss 1.069761, test_acc: 74.1336
+Epoch: [28/300], cls_loss: 0.2474, transfer_loss: -0.7499, total_Loss: -0.5025, test_loss 1.105557, test_acc: 74.1795
+Epoch: [29/300], cls_loss: 0.2311, transfer_loss: -0.7497, total_Loss: -0.5187, test_loss 1.123573, test_acc: 73.7205
+tensor([33., 41.,  6.,  8., 40., 61., 25., 54., 52., 12., 48., 25., 27., 21.,
+        23., 62., 61., 13., 11., 38.,  5., 57., 47., 39., 43., 54., 42., 21.,
+        58., 60., 21., 14.])
+0.3759191176470588
+Accuracy = 73.99% -> 75.92%
+
+[42 41  6  8 40 51 25 54 52 32 52 25 27 21 23 52 42 13 11 38  5 57 47 45
+ 43 54 42 21 58 60 54 14]
+Epoch: [30/300], cls_loss: 0.2207, transfer_loss: -0.8657, total_Loss: -0.3578, test_loss 1.103925, test_acc: 74.3401
+Epoch: [31/300], cls_loss: 0.2279, transfer_loss: -0.7607, total_Loss: -0.5328, test_loss 1.096522, test_acc: 74.2483
+Epoch: [32/300], cls_loss: 0.2124, transfer_loss: -0.7600, total_Loss: -0.5476, test_loss 1.115521, test_acc: 74.3631
+tensor([53., 30.,  0., 46., 48., 54., 31., 59., 13., 25., 26.,  4.,  7., 18.,
+        36., 42., 23., 49., 36., 32., 17., 16., 46.,  6.,  7., 50., 47.,  5.,
+        36., 10., 48., 53.])
+0.3586856617647059
+Accuracy = 74.59% -> 76.45%
+
+[53 30 47 46 48 54 55 59 23 25 26  4  7 18 36 42 23 49 36 32 33 16 62  6
+  7 50 47  5 36 59 48 53]
+Epoch: [33/300], cls_loss: 0.1952, transfer_loss: -0.8686, total_Loss: -0.3713, test_loss 1.114973, test_acc: 74.5467
+Epoch: [34/300], cls_loss: 0.2102, transfer_loss: -0.7637, total_Loss: -0.5535, test_loss 1.093826, test_acc: 75.0516
+Epoch: [35/300], cls_loss: 0.2015, transfer_loss: -0.7660, total_Loss: -0.5645, test_loss 1.103826, test_acc: 74.7533
+tensor([17., 39.,  3., 30., 31., 54., 10., 14.,  9., 53., 22., 50., 41., 49.,
+        28., 59., 62., 55., 50., 34., 29.,  3., 34., 47., 28., 12., 44., 56.,
+        61.,  4., 61.,  5.])
+0.34420955882352944
+Accuracy = 73.99% -> 76.06%
+
+[33 39 13 30  2 54 10 48  9 53 22 19 41 57 28 59 62 55 50 34 29  3 58 47
+ 28 32 44 56 51  4 43 55]
+Epoch: [36/300], cls_loss: 0.1846, transfer_loss: -0.8697, total_Loss: -0.3680, test_loss 1.104045, test_acc: 75.1205
+Epoch: [37/300], cls_loss: 0.1905, transfer_loss: -0.7702, total_Loss: -0.5797, test_loss 1.099947, test_acc: 75.0516
+Epoch: [38/300], cls_loss: 0.1780, transfer_loss: -0.7696, total_Loss: -0.5916, test_loss 1.094318, test_acc: 75.4189
+tensor([ 0., 21.,  1., 47., 55., 58., 60., 61., 18., 25., 64.,  7.,  4., 39.,
+         7., 54.,  3., 27.,  5., 48., 49., 61., 36., 50., 22., 48., 36., 28.,
+        12.,  9., 51., 36.])
+0.3366268382352941
+Accuracy = 75.23% -> 76.52%
+
+[ 0 21  1 12 55 58 60 30 18 21 64  7  4 39  7 54  3 27  5 48 49  2 36 50
+ 22 48 36 28 12  9 42 57]
+Epoch: [39/300], cls_loss: 0.1770, transfer_loss: -0.8778, total_Loss: -0.3818, test_loss 1.091114, test_acc: 75.7631
+Epoch: [40/300], cls_loss: 0.1873, transfer_loss: -0.7756, total_Loss: -0.5883, test_loss 1.126656, test_acc: 75.0975
+Transfer result: 75.7631
+Epoch: [41/300], cls_loss: 0.1685, transfer_loss: -0.7781, total_Loss: -0.6097, test_loss 1.126382, test_acc: 75.3041
+tensor([ 6., 43.,  1., 30.,  1., 42., 52., 31., 41., 61.,  9., 13.,  3., 56.,
+         0., 43., 21., 42., 19., 12., 21., 39., 45.,  9.,  1., 18., 30., 54.,
+        10., 12., 43., 26.])
+0.32858455882352944
+Accuracy = 74.86% -> 76.84%
+
+[ 6 26  1 30  1 42 52 21 41 42  9  3  3 34  0 49 21 42 19 29 21  9 45  9
+  1 18 30 54 10 32 38 26]
+Epoch: [42/300], cls_loss: 0.1739, transfer_loss: -0.8744, total_Loss: -0.3788, test_loss 1.126868, test_acc: 75.6254
+Epoch: [43/300], cls_loss: 0.1656, transfer_loss: -0.7799, total_Loss: -0.6144, test_loss 1.123812, test_acc: 75.2353
+Epoch: [44/300], cls_loss: 0.1572, transfer_loss: -0.7856, total_Loss: -0.6284, test_loss 1.150674, test_acc: 75.2812
+tensor([53.,  6., 14., 31., 31., 10.,  4., 56.,  4., 44., 43., 40., 60., 32.,
+         1., 13., 38., 25., 13.,  0., 30.,  6., 63.,  7.,  8., 54., 55., 16.,
+        41.,  7.,  8., 11.])
+0.31847426470588236
+Accuracy = 75.18% -> 76.29%
+
+[59  6 14 31 31 10  4 36  4 59 42  6 60 29 27 13 38 25  3 47 42  6 63  7
+  8 54  5 16 41  7  8 11]
+Epoch: [45/300], cls_loss: 0.1588, transfer_loss: -0.8757, total_Loss: -0.3821, test_loss 1.126795, test_acc: 75.6484
+Epoch: [46/300], cls_loss: 0.1587, transfer_loss: -0.7837, total_Loss: -0.6249, test_loss 1.128855, test_acc: 75.5795
+Epoch: [47/300], cls_loss: 0.1516, transfer_loss: -0.7846, total_Loss: -0.6330, test_loss 1.129719, test_acc: 75.7861
+tensor([30., 49., 53., 43., 56.,  7.,  0., 59., 60., 10., 59.,  5., 35., 10.,
+         4.,  8., 37., 26., 37., 16., 35., 30., 37.,  2., 57., 29., 54., 14.,
+        27.,  5., 27., 23.])
+0.3127297794117647
+Accuracy = 75.53% -> 76.68%
+
+[30 49 53 43 56  7  0 10 60 10 10 55 35 13  4  8 37 26 37 16 35 30 37  2
+ 57 29 54 49 27 55 27 44]
+Epoch: [48/300], cls_loss: 0.1462, transfer_loss: -0.8733, total_Loss: -0.3852, test_loss 1.129687, test_acc: 75.9468
+Epoch: [49/300], cls_loss: 0.1567, transfer_loss: -0.7917, total_Loss: -0.6350, test_loss 1.128617, test_acc: 76.0845
+Epoch: [50/300], cls_loss: 0.1380, transfer_loss: -0.7922, total_Loss: -0.7646, test_loss 1.142914, test_acc: 75.8779
+tensor([40., 41., 50., 18., 61., 52., 30., 60., 10., 44., 27., 61.,  9., 10.,
+        37., 25., 11., 59., 13., 61., 54., 27., 32., 48.,  2., 54., 23., 44.,
+        27.,  4.,  5.,  8.])
+0.30353860294117646
+Accuracy = 76.03% -> 76.65%
+
+[40 62 50 18 61 52 30 60 10 23 27 42  9 10 55 25  3 10 13 46 54 27 32 48
+ 43 54 23 23 27  4  5  8]
+Epoch: [51/300], cls_loss: 0.1431, transfer_loss: -0.8752, total_Loss: -0.3870, test_loss 1.185549, test_acc: 75.9697
+Epoch: [52/300], cls_loss: 0.1490, transfer_loss: -0.7959, total_Loss: -0.7661, test_loss 1.173928, test_acc: 76.1304
+Epoch: [53/300], cls_loss: 0.1484, transfer_loss: -0.7942, total_Loss: -0.7645, test_loss 1.157588, test_acc: 76.4287
+tensor([25.,  6., 53.,  2.,  8., 59., 36., 21.,  6., 24., 58.,  6., 38., 39.,
+         8.,  4., 17., 25., 47., 16., 47., 13., 36.,  6., 56., 25., 54., 24.,
+        37., 20., 23., 21.])
+0.28768382352941174
+Accuracy = 76.24% -> 77.34%
+
+[32  6 20 43  8 59 36 21  6 24 58  6 38 39  8  4 33 10 47 51 47 13 36  6
+ 64 21 54 24 37 20 18 21]
+Epoch: [54/300], cls_loss: 0.1418, transfer_loss: -0.8715, total_Loss: -0.3852, test_loss 1.170052, test_acc: 76.2451
+Epoch: [55/300], cls_loss: 0.1481, transfer_loss: -0.7985, total_Loss: -0.7688, test_loss 1.169437, test_acc: 76.6353
+Epoch: [56/300], cls_loss: 0.1470, transfer_loss: -0.7995, total_Loss: -0.7701, test_loss 1.164366, test_acc: 76.5435
+tensor([36., 64., 28., 60., 12., 16., 48., 32.,  0., 40., 60., 37., 44., 56.,
+        16., 59.,  2., 16., 46., 54., 27., 63., 19.,  4., 21., 48., 36., 10.,
+         6., 39., 35.,  7.])
+0.28170955882352944
+Accuracy = 76.36% -> 77.16%
+
+[36 64 28 60 12 51 52 29  0 40 60 55 44 56 16 59  2 16 46 54 27 63 19  4
+ 54 48 36 10  6 40  5  7]
+Epoch: [57/300], cls_loss: 0.1453, transfer_loss: -0.8771, total_Loss: -0.3954, test_loss 1.169878, test_acc: 76.6812
+Epoch: [58/300], cls_loss: 0.1491, transfer_loss: -0.8042, total_Loss: -0.7744, test_loss 1.197305, test_acc: 76.2910
+Epoch: [59/300], cls_loss: 0.1600, transfer_loss: -0.8010, total_Loss: -0.7690, test_loss 1.213377, test_acc: 76.4058
+tensor([53., 29., 62., 32., 57., 44., 36., 51., 34.,  3., 28., 27., 59., 43.,
+        25., 27., 53.,  2., 48., 14., 37., 12., 31., 37.,  8., 62.,  5., 22.,
+        31., 11., 52., 54.])
+0.27228860294117646
+Accuracy = 76.24% -> 77.07%
+
+[53 29 45 32 57 52 36 42 34 13 28 27 59 19 25 27 53  2 48 14 37 12 21 37
+  8 62  5 22 14 11 52 54]
+Epoch: [60/300], cls_loss: 0.1562, transfer_loss: -0.8733, total_Loss: -0.3906, test_loss 1.195342, test_acc: 76.3828
+Transfer result: 76.6812
+Epoch: [61/300], cls_loss: 0.1591, transfer_loss: -0.8058, total_Loss: -0.7740, test_loss 1.188090, test_acc: 76.6582
+Epoch: [62/300], cls_loss: 0.1537, transfer_loss: -0.8059, total_Loss: -0.7751, test_loss 1.195218, test_acc: 76.6812
+tensor([ 4.,  4., 23., 28., 64., 15., 34., 10., 11., 28., 31., 63., 64., 14.,
+        13., 59.,  5., 26., 10.,  9., 30., 29., 54., 45., 25., 13., 31., 21.,
+        45., 21., 63., 38.])
+0.26355698529411764
+Accuracy = 75.99% -> 77.00%
+
+[ 4  4  2 28 64 31 34 10 11 28 23 63 64 14 13 59 55 26 10  9 30 29 54 45
+ 25 13 31 21 45 21 63 50]
+Epoch: [63/300], cls_loss: 0.1509, transfer_loss: -0.8709, total_Loss: -0.3875, test_loss 1.218487, test_acc: 76.4287
+Epoch: [64/300], cls_loss: 0.1569, transfer_loss: -0.8042, total_Loss: -0.7728, test_loss 1.197752, test_acc: 76.7042
+Epoch: [65/300], cls_loss: 0.1581, transfer_loss: -0.8055, total_Loss: -0.7738, test_loss 1.180674, test_acc: 76.9107
+tensor([ 4., 60., 39., 20., 22., 57., 10., 63., 50.,  9., 52.,  1., 48., 43.,
+        54., 18., 21., 63., 50., 28., 43., 61., 37., 27., 41., 35., 16., 52.,
+        45.,  9., 13.,  3.])
+0.2619485294117647
+Accuracy = 76.86% -> 77.53%
+
+[ 4 60 39 20 22 57 10 63 11  9 59  1 48 43 54 18 21 63 50 28 43 11 37 27
+ 41 35 16 23 62  9 18  3]
+Epoch: [66/300], cls_loss: 0.1513, transfer_loss: -0.8768, total_Loss: -0.3973, test_loss 1.194585, test_acc: 76.7042
+Epoch: [67/300], cls_loss: 0.1540, transfer_loss: -0.8056, total_Loss: -0.7748, test_loss 1.212403, test_acc: 76.8878
+Epoch: [68/300], cls_loss: 0.1565, transfer_loss: -0.8072, total_Loss: -0.7759, test_loss 1.202489, test_acc: 76.9107
+tensor([51., 11., 13., 35.,  1., 19., 30., 46., 11., 51.,  9.,  2., 44.,  0.,
+        51., 55., 25., 26., 11., 45., 21., 10., 14.,  9.,  5.,  9., 60., 18.,
+        49., 41., 36., 50.])
+0.2575827205882353
+Accuracy = 77.00% -> 77.57%
+
+[51 59 13 35  1 19 30 62 53 51  9  2 52  0 51 52 25 26 11 62 21 13 14  9
+  5  9 60 18 49 41 36 50]
+Epoch: [69/300], cls_loss: 0.1560, transfer_loss: -0.8739, total_Loss: -0.3913, test_loss 1.209595, test_acc: 76.8419
+Epoch: [70/300], cls_loss: 0.1653, transfer_loss: -0.8109, total_Loss: -0.7779, test_loss 1.220112, test_acc: 76.8878
+Epoch: [71/300], cls_loss: 0.1577, transfer_loss: -0.8079, total_Loss: -0.7764, test_loss 1.195766, test_acc: 76.8648
+tensor([14., 61., 46., 37., 64., 15.,  9., 23.,  7.,  2., 57., 53., 53.,  1.,
+        18., 31., 34., 25., 44.,  0., 40., 16., 32.,  5., 49., 22., 29., 55.,
+        55., 42., 56., 31.])
+0.24862132352941177
+Accuracy = 76.61% -> 77.44%
+
+[14 24 62 37 64 16  9 23 29  2 57 53 53  1 18 31 34 25 44  0 40 16 17  5
+ 49 22 29 55 55 42 64 31]
+Epoch: [72/300], cls_loss: 0.1567, transfer_loss: -0.8728, total_Loss: -0.3976, test_loss 1.189665, test_acc: 77.1173
+Epoch: [73/300], cls_loss: 0.1552, transfer_loss: -0.8133, total_Loss: -0.7822, test_loss 1.206112, test_acc: 77.2320
+Epoch: [74/300], cls_loss: 0.1571, transfer_loss: -0.8149, total_Loss: -0.7834, test_loss 1.228675, test_acc: 76.9796
+tensor([ 5., 43., 42., 60., 35., 62., 14., 47.,  1.,  9., 30., 63.,  3., 42.,
+        51., 48., 37., 54., 41., 44., 14., 61., 10.,  2., 25.,  0., 25., 64.,
+        11., 63.,  1., 52.])
+0.25206801470588236
+Accuracy = 76.95% -> 77.73%
+
+[ 5 43 42 60  5 62 62 47  1  9 30 63  3 42 51 48 37 54 62 38 14 35 10  2
+ 25  0 25 64 38 63  1 40]
+Epoch: [75/300], cls_loss: 0.1539, transfer_loss: -0.8796, total_Loss: -0.4040, test_loss 1.198875, test_acc: 77.4156
+Epoch: [76/300], cls_loss: 0.1505, transfer_loss: -0.8136, total_Loss: -0.7835, test_loss 1.205708, test_acc: 77.4156
+Epoch: [77/300], cls_loss: 0.1527, transfer_loss: -0.8145, total_Loss: -0.7840, test_loss 1.231179, test_acc: 77.0484
+tensor([31., 36., 34.,  4.,  2.,  4.,  6., 63., 56., 14., 23., 61., 43., 49.,
+        53., 33.,  7., 42., 36., 46., 34., 42., 22., 39., 17., 62., 35.,  3.,
+        28., 60., 60., 46.])
+0.23988970588235295
+Accuracy = 77.11% -> 77.48%
+
+[31 36 34  4  2  4  6 63 56 14 38  6 43 49 53 33  7 42 36 51 34 42 22 39
+ 33 52 35  3 28 60 60 26]
+Epoch: [78/300], cls_loss: 0.1525, transfer_loss: -0.8761, total_Loss: -0.3964, test_loss 1.217783, test_acc: 77.3009
+Epoch: [79/300], cls_loss: 0.1516, transfer_loss: -0.8174, total_Loss: -0.7871, test_loss 1.217779, test_acc: 77.3698
+Epoch: [80/300], cls_loss: 0.1585, transfer_loss: -0.8144, total_Loss: -0.7827, test_loss 1.222294, test_acc: 76.9107
+Transfer result: 77.4156
+tensor([64., 12., 24., 36.,  0., 42., 44.,  6., 49.,  8., 24., 61., 63., 54.,
+        20., 63., 64., 15., 60., 54., 58.,  3., 63.,  5.,  1., 56.,  5.,  9.,
+        32., 62.,  1., 32.])
+0.23943014705882354
+Accuracy = 77.14% -> 77.57%
+
+[56 12 24 64  0 51  8 63 49  8 24 42  2 54 48  2 64 15 60 54 58  3 63 55
+  1 64  5  9 32 52  1 32]
+Epoch: [81/300], cls_loss: 0.1476, transfer_loss: -0.8755, total_Loss: -0.4008, test_loss 1.214354, test_acc: 77.2550
+Epoch: [82/300], cls_loss: 0.1510, transfer_loss: -0.8179, total_Loss: -0.7876, test_loss 1.252817, test_acc: 77.0484
+Epoch: [83/300], cls_loss: 0.1586, transfer_loss: -0.8187, total_Loss: -0.7870, test_loss 1.258803, test_acc: 77.0484
+tensor([ 2., 28.,  7., 39., 54., 30., 28., 21., 27.,  0., 63., 36., 18., 28.,
+        22., 42., 28., 61., 54., 34.,  0., 47.,  1., 46., 48., 38., 45., 10.,
+        19., 34., 21., 32.])
+0.23552389705882354
+Accuracy = 76.56% -> 77.09%
+
+[47 28  7 39 21 30 28 21 27  0  2 36 18 28 22 42 28 24 54 34  0 47  1 46
+ 48 49 45 10 19 34 21 32]
+Epoch: [84/300], cls_loss: 0.1523, transfer_loss: -0.8708, total_Loss: -0.3984, test_loss 1.213127, test_acc: 77.5075
+Epoch: [85/300], cls_loss: 0.1520, transfer_loss: -0.8201, total_Loss: -0.7897, test_loss 1.253268, test_acc: 77.0484
+Epoch: [86/300], cls_loss: 0.1492, transfer_loss: -0.8188, total_Loss: -0.7889, test_loss 1.247953, test_acc: 77.1402
+tensor([12.,  9., 16., 35.,  5., 22., 56.,  8., 11., 25., 13.,  5., 31., 27.,
+        56.,  9., 30.,  8.,  1., 10., 19.,  3.,  3., 20., 48., 58., 42., 29.,
+         4.,  0., 27.,  5.])
+0.23138786764705882
+Accuracy = 77.16% -> 77.64%
+
+[12  9 16 35  5 22 56  8 14 25  3  5 31 27 16  9 30  8  1 10 19  3  3 20
+ 48 58 42 29  4  0 27  5]
+Epoch: [87/300], cls_loss: 0.1453, transfer_loss: -0.8742, total_Loss: -0.3998, test_loss 1.248461, test_acc: 77.2779
+Epoch: [88/300], cls_loss: 0.1442, transfer_loss: -0.8248, total_Loss: -0.7959, test_loss 1.255866, test_acc: 77.0484
+Epoch: [89/300], cls_loss: 0.1571, transfer_loss: -0.8142, total_Loss: -0.7828, test_loss 1.235396, test_acc: 77.3009
+tensor([33., 27., 64., 50., 60., 22.,  3., 23., 41., 63.,  8., 18., 18.,  1.,
+        19.,  4.,  2., 57., 11., 47., 27., 23., 31., 34., 52., 30., 30.,  1.,
+        23.,  7., 23., 11.])
+0.23069852941176472
+Accuracy = 77.07% -> 77.57%
+
+[51 27 64 50 47 22 52 38 41 63  8 18 18  1 19  4  2 57 41 47 27 23 31 34
+  3 30 30  1 23  7 23 53]
+Epoch: [90/300], cls_loss: 0.1467, transfer_loss: -0.8730, total_Loss: -0.3988, test_loss 1.247368, test_acc: 77.2320
+Epoch: [91/300], cls_loss: 0.1597, transfer_loss: -0.8194, total_Loss: -0.7875, test_loss 1.255125, test_acc: 77.3468
+Epoch: [92/300], cls_loss: 0.1485, transfer_loss: -0.8257, total_Loss: -0.7960, test_loss 1.255927, test_acc: 77.4386
+tensor([ 8., 15., 49., 56., 21.,  8., 60., 46., 21., 36.,  1., 44., 13., 12.,
+         8.,  2., 28., 21., 52., 18., 46.,  8., 63., 27.,  1., 40.,  9., 49.,
+        21.,  8., 12.,  4.])
+0.22541360294117646
+Accuracy = 77.11% -> 77.32%
+
+[ 8 59 49 56 36  8 60 46 21 36  1 52  3 12  8  2 28 21  3 18 23  8  6 27
+  1 40  9 49 21  8 12  4]
+Epoch: [93/300], cls_loss: 0.1488, transfer_loss: -0.8741, total_Loss: -0.4027, test_loss 1.257386, test_acc: 77.2091
+Epoch: [94/300], cls_loss: 0.1467, transfer_loss: -0.8213, total_Loss: -0.7919, test_loss 1.275220, test_acc: 77.6222
+Epoch: [95/300], cls_loss: 0.1499, transfer_loss: -0.8253, total_Loss: -0.7953, test_loss 1.273988, test_acc: 77.4845
+tensor([16.,  5., 57., 30., 51.,  3., 32., 27., 16., 21., 42., 12., 44., 34.,
+        58., 63., 18., 50.,  6., 39., 54., 36., 47., 26., 18., 47., 62., 41.,
+        16., 40., 54., 10.])
+0.21852022058823528
+Accuracy = 77.25% -> 77.62%
+
+[16  5 57 30 51 52 32 36 51 21 42 32 38 34  7 63 18 50  6 39 54 36 47 26
+ 18 47 52 41 26 40 54 10]
+Epoch: [96/300], cls_loss: 0.1529, transfer_loss: -0.8736, total_Loss: -0.4002, test_loss 1.255746, test_acc: 77.4386
+Epoch: [97/300], cls_loss: 0.1477, transfer_loss: -0.8228, total_Loss: -0.7932, test_loss 1.260889, test_acc: 77.5993
+Epoch: [98/300], cls_loss: 0.1490, transfer_loss: -0.8164, total_Loss: -0.7866, test_loss 1.261924, test_acc: 77.5534
+tensor([ 2., 10., 50., 43., 51.,  1., 45., 16.,  0.,  7., 54., 63., 59.,  4.,
+        31., 48.,  6., 22.,  8.,  5., 46., 41., 53., 54., 11., 44., 32., 56.,
+        19., 44., 10., 51.])
+0.21277573529411764
+Accuracy = 77.16% -> 77.67%
+
+[55 59 50  6 51  1 45 16 62  7 54 48 59  4  2 52  6 22  8  5 22 41 53 54
+ 48 62 32 56 19 43 10 51]
+Epoch: [99/300], cls_loss: 0.1480, transfer_loss: -0.8821, total_Loss: -0.4097, test_loss 1.238181, test_acc: 77.4386
+Epoch: [100/300], cls_loss: 0.1486, transfer_loss: -0.8248, total_Loss: -0.7950, test_loss 1.275297, test_acc: 77.3698
+Transfer result: 77.6222
+Epoch: [101/300], cls_loss: 0.1386, transfer_loss: -0.8245, total_Loss: -0.7968, test_loss 1.269116, test_acc: 77.6452
+tensor([ 2., 31., 56., 31.,  9., 44., 45.,  4., 52., 40., 31., 22., 28., 62.,
+        41., 42., 30., 29.,  4., 10., 57., 55., 36., 30., 63.,  7., 56., 55.,
+        60.,  5., 48., 30.])
+0.21461397058823528
+Accuracy = 77.30% -> 77.85%
+
+[ 2 31 47 31 22 35 45  4 52 40 60 22 28 52 41 42 45 29  4 10 40 55 36 30
+ 63  7 56 55 60 55 48 30]
+Epoch: [102/300], cls_loss: 0.1486, transfer_loss: -0.8738, total_Loss: -0.3985, test_loss 1.264362, test_acc: 77.4156
+Epoch: [103/300], cls_loss: 0.1518, transfer_loss: -0.8254, total_Loss: -0.7950, test_loss 1.264612, test_acc: 77.5763
+Epoch: [104/300], cls_loss: 0.1429, transfer_loss: -0.8209, total_Loss: -0.7923, test_loss 1.267254, test_acc: 77.5075
+tensor([42., 60., 36., 61., 16., 63., 44., 59., 43.,  8., 36., 55., 30.,  6.,
+         8., 43., 42.,  2.,  9., 23., 40., 60., 57.,  7.,  4., 25., 48.,  6.,
+        18.,  0., 27., 12.])
+0.21323529411764705
+Accuracy = 77.25% -> 77.83%
+
+[42 60 36 53 16 63 23 59 43  8 36  2 26  6  8 43 42  2  9  2 55 60 57  7
+  4 25 52  6 18  0 27 12]
+Epoch: [105/300], cls_loss: 0.1483, transfer_loss: -0.8715, total_Loss: -0.3963, test_loss 1.306029, test_acc: 77.3009
+Epoch: [106/300], cls_loss: 0.1433, transfer_loss: -0.8233, total_Loss: -0.7946, test_loss 1.295125, test_acc: 77.4616
+Epoch: [107/300], cls_loss: 0.1480, transfer_loss: -0.8289, total_Loss: -0.7993, test_loss 1.279000, test_acc: 77.7140
+tensor([41., 63., 54., 30., 49., 30., 21., 18., 47.,  8., 19., 42., 55., 27.,
+         8., 23.,  8., 64., 16., 39., 31., 17., 61., 50., 21.,  6., 21., 60.,
+        55., 38., 56., 43.])
+0.20450367647058823
+Accuracy = 77.21% -> 77.71%
+
+[41 63 54 26 49 30 62 18 47  8 19 42 55 27  8 44  8 64 16  9 31  9 43 50
+ 56  6 21 60 55 38 64 43]
+Epoch: [108/300], cls_loss: 0.1509, transfer_loss: -0.8757, total_Loss: -0.4042, test_loss 1.306050, test_acc: 77.4156
+Epoch: [109/300], cls_loss: 0.1508, transfer_loss: -0.8287, total_Loss: -0.7986, test_loss 1.273221, test_acc: 77.3698
+Epoch: [110/300], cls_loss: 0.1452, transfer_loss: -0.8249, total_Loss: -0.7959, test_loss 1.299583, test_acc: 77.4156
+tensor([53., 29., 25., 11., 55.,  6., 35.,  1., 25., 63., 56., 62.,  5., 58.,
+        36., 10., 16., 31.,  3., 35., 31., 64., 45.,  2., 41.,  0., 44., 21.,
+        44., 43.,  0., 34.])
+0.20220588235294118
+Accuracy = 76.91% -> 77.64%
+
+[53 29 25 52 55 37 35  1 25 63 56 62  5 58 36 10 16 31  3 35 31 27 45  2
+ 41  0 52 21 62 43  0 34]
+Epoch: [111/300], cls_loss: 0.1446, transfer_loss: -0.8768, total_Loss: -0.4030, test_loss 1.286633, test_acc: 77.6452
+Epoch: [112/300], cls_loss: 0.1527, transfer_loss: -0.8207, total_Loss: -0.7901, test_loss 1.294570, test_acc: 77.8288
+Epoch: [113/300], cls_loss: 0.1494, transfer_loss: -0.8175, total_Loss: -0.7877, test_loss 1.274081, test_acc: 77.6452
+tensor([38., 44., 30., 56., 62., 53., 56., 44., 32., 12., 54.,  3., 49., 15.,
+        61., 58., 26., 34., 24., 40., 29., 44.,  0., 58., 50., 22., 25., 39.,
+        13., 10., 39., 36.])
+0.2065716911764706
+Accuracy = 77.55% -> 78.24%
+
+[38 17 30 56 62 53 56  8 32 12 54  3 49 52 35 39 26 34 24 40 29 23 27 58
+ 50 22 25 39 13 22 47 36]
+Epoch: [114/300], cls_loss: 0.1465, transfer_loss: -0.8762, total_Loss: -0.4067, test_loss 1.313780, test_acc: 77.7599
+Epoch: [115/300], cls_loss: 0.1461, transfer_loss: -0.8331, total_Loss: -0.8038, test_loss 1.281689, test_acc: 77.4616
+Epoch: [116/300], cls_loss: 0.1451, transfer_loss: -0.8233, total_Loss: -0.7943, test_loss 1.317387, test_acc: 77.5993
+tensor([31., 15., 10., 38., 50., 62., 18., 18., 41., 52., 19., 16., 14.,  8.,
+        17., 15., 37., 60.,  5., 48.,  3., 13., 42., 59., 26.,  9.,  9., 39.,
+         9., 61., 11., 35.])
+0.20726102941176472
+Accuracy = 77.60% -> 78.22%
+
+[31 59 10 30 50 62 18 18 41  3 19 16 14  8 33 31 37 60 55 48  3 13 42 52
+ 26  6  9 39  9 61 44 35]
+Epoch: [117/300], cls_loss: 0.1446, transfer_loss: -0.8739, total_Loss: -0.4050, test_loss 1.292441, test_acc: 77.3238
+Epoch: [118/300], cls_loss: 0.1475, transfer_loss: -0.8267, total_Loss: -0.7972, test_loss 1.277231, test_acc: 77.7370
+Epoch: [119/300], cls_loss: 0.1470, transfer_loss: -0.8283, total_Loss: -0.7989, test_loss 1.271289, test_acc: 77.8288
+tensor([31., 10., 46., 17., 36., 52., 27., 59., 45., 48., 29., 28., 21., 43.,
+        54.,  4., 46., 12.,  5., 15., 22., 11., 51., 56., 43., 31., 44., 23.,
+        37.,  8., 61., 13.])
+0.20565257352941177
+Accuracy = 77.87% -> 78.31%
+
+[31 10 62 22 36 52 27 59 45 48 29 28 21 43 54  4 15 29  5 15 22 53 51 56
+ 42 31 52 23 37  8 61  3]
+Epoch: [120/300], cls_loss: 0.1440, transfer_loss: -0.8716, total_Loss: -0.4004, test_loss 1.293884, test_acc: 77.5075
+Transfer result: 77.8288
+Epoch: [121/300], cls_loss: 0.1474, transfer_loss: -0.8337, total_Loss: -0.8042, test_loss 1.289451, test_acc: 77.6452
+Epoch: [122/300], cls_loss: 0.1444, transfer_loss: -0.8288, total_Loss: -0.8000, test_loss 1.281944, test_acc: 77.8058
+tensor([21., 21., 28.,  1., 53.,  4., 34., 26., 25., 54., 36., 49., 26., 31.,
+        40., 60.,  3., 16.,  4., 38., 63., 15., 47., 58.,  9., 38., 49.,  5.,
+         7., 25., 52., 34.])
+0.19852941176470587
+Accuracy = 77.55% -> 77.85%
+
+[21 21 28  1 53  4 58 26 25 54 36 49 26 31 40 60  3 26  4 38 63 15 47 20
+  9 38 49  5  7 25 52 12]
+Epoch: [123/300], cls_loss: 0.1438, transfer_loss: -0.8698, total_Loss: -0.3994, test_loss 1.290075, test_acc: 77.6911
+Epoch: [124/300], cls_loss: 0.1475, transfer_loss: -0.8319, total_Loss: -0.8024, test_loss 1.291907, test_acc: 77.6222
+Epoch: [125/300], cls_loss: 0.1437, transfer_loss: -0.8326, total_Loss: -0.8038, test_loss 1.306043, test_acc: 77.5534
+tensor([61., 30., 38., 21.,  9., 58., 58., 36., 48., 58., 27., 63.,  3., 37.,
+        56.,  9.,  2., 31.,  4.,  9.,  3., 21., 39., 49., 37., 28., 54.,  8.,
+        16., 34., 60.,  8.])
+0.20059742647058823
+Accuracy = 77.69% -> 78.26%
+
+[62 30 44 21  9 34 58 36 52 58 27 63  3 37 58  9  2 31  4  9  3 21 39 49
+ 37 28 54  8 16 12 60  8]
+Epoch: [126/300], cls_loss: 0.1385, transfer_loss: -0.8778, total_Loss: -0.4084, test_loss 1.303935, test_acc: 77.2779
+Epoch: [127/300], cls_loss: 0.1426, transfer_loss: -0.8268, total_Loss: -0.7983, test_loss 1.305521, test_acc: 77.6222
+Epoch: [128/300], cls_loss: 0.1440, transfer_loss: -0.8322, total_Loss: -0.8034, test_loss 1.347324, test_acc: 77.5534
+tensor([25., 55., 17., 30., 57., 18., 61., 56.,  9., 36., 15., 19., 34., 24.,
+        63., 53., 60., 32., 47., 40., 56., 56., 16.,  9.,  9., 42., 34., 50.,
+         4., 36., 14., 55.])
+0.19117647058823528
+Accuracy = 77.25% -> 77.92%
+
+[25 55 33 30 57 18 61 56  9 36 30 19 34 24 63 53 60 32 47 40 56 56 51  9
+  9 42 34 50  4 36 14 55]
+Epoch: [129/300], cls_loss: 0.1329, transfer_loss: -0.8696, total_Loss: -0.4040, test_loss 1.313417, test_acc: 77.6911
+Epoch: [130/300], cls_loss: 0.1363, transfer_loss: -0.8291, total_Loss: -0.8018, test_loss 1.302845, test_acc: 77.5763
+Epoch: [131/300], cls_loss: 0.1310, transfer_loss: -0.8266, total_Loss: -0.8004, test_loss 1.324503, test_acc: 77.6681
+tensor([33., 51., 41., 58., 60.,  2., 17., 26., 63., 62.,  7., 11., 24., 26.,
+        25.,  4.,  7.,  9., 10., 26., 20., 31., 15., 22., 30., 63.,  6., 29.,
+        60., 15., 37., 26.])
+0.18727022058823528
+Accuracy = 77.44% -> 78.03%
+
+[42 51 41 58 60  2 36 26 48 62  7 18 42 51 25  4  7  9 10 26 20 31 15 22
+ 30 63  6  7 60 12 37 26]
+Epoch: [132/300], cls_loss: 0.1365, transfer_loss: -0.8784, total_Loss: -0.4076, test_loss 1.349292, test_acc: 77.6222
+Transfer result: 77.8288

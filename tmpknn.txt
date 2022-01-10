@@ -1,0 +1,94 @@
+Namespace(backbone='resnet50', batch_size=32, config='plabel_Att_knn/plabel_att_knn.yaml', data_dir='/DB/rhome/yuhaowang/CV_DA/OfficeHomeDataset_10072016', device=device(type='cuda'), early_stop=20, epoch_based_training=False, is_balance=False, lr=0.001, lr_decay=0.75, lr_gamma=0.0003, lr_scheduler=True, momentum=0.9, n_epoch=300, n_iter_per_epoch=300, num_workers=3, seed=1, src_domain='Clipart', tgt_domain='Real_World', transfer_loss='bnm', transfer_loss_weight=1.0, use_bottleneck=True, weight_decay=0.0005)
+balance para is : False
+batch_num is  136
+load success
+0.23828125
+Accuracy = 75.28% -> 75.62%
+
+********************
+*****    start knn!    *****
+********************
+*****    training finish! Start to test    *****
+Accuracy = 44.36% -> 44.65%
+
+Accuracy = 75.62% -> 75.69%
+
+save success
+Epoch: [ 0/300], cls_loss: 0.0524, transfer_loss: -0.8802, total_Loss: -0.3708, test_loss 1.424229, test_acc: 76.4746
+Transfer result: 76.4746
+Epoch: [ 1/300], cls_loss: 0.0876, transfer_loss: -0.8396, total_Loss: -0.7520, test_loss 1.471919, test_acc: 76.4058
+Epoch: [ 2/300], cls_loss: 0.0895, transfer_loss: -0.8388, total_Loss: -0.7493, test_loss 1.430045, test_acc: 76.4517
+0.1714154411764706
+Accuracy = 76.13% -> 76.84%
+
+********************
+*****    start knn!    *****
+********************
+*****    training finish! Start to test    *****
+Accuracy = 40.08% -> 40.62%
+
+Accuracy = 76.84% -> 76.93%
+
+save success
+Epoch: [ 3/300], cls_loss: 0.0856, transfer_loss: -0.8738, total_Loss: -0.3815, test_loss 1.465091, test_acc: 76.5894
+Epoch: [ 4/300], cls_loss: 0.0874, transfer_loss: -0.8376, total_Loss: -0.7503, test_loss 1.430382, test_acc: 76.5435
+Epoch: [ 5/300], cls_loss: 0.0819, transfer_loss: -0.8321, total_Loss: -0.7502, test_loss 1.434016, test_acc: 76.1992
+0.1675091911764706
+Accuracy = 76.33% -> 76.72%
+
+********************
+*****    start knn!    *****
+********************
+*****    training finish! Start to test    *****
+Accuracy = 39.92% -> 40.33%
+
+Accuracy = 76.72% -> 76.79%
+
+Epoch: [ 6/300], cls_loss: 0.0767, transfer_loss: -0.8728, total_Loss: -0.3825, test_loss 1.460381, test_acc: 76.4517
+save success
+Epoch: [ 7/300], cls_loss: 0.0816, transfer_loss: -0.8401, total_Loss: -0.7585, test_loss 1.468964, test_acc: 76.7042
+save success
+Epoch: [ 8/300], cls_loss: 0.0747, transfer_loss: -0.8401, total_Loss: -0.7654, test_loss 1.481647, test_acc: 76.7730
+0.1557904411764706
+Accuracy = 76.42% -> 77.09%
+
+********************
+*****    start knn!    *****
+********************
+*****    training finish! Start to test    *****
+Accuracy = 39.23% -> 39.82%
+
+Accuracy = 77.09% -> 77.18%
+
+Epoch: [ 9/300], cls_loss: 0.0708, transfer_loss: -0.8746, total_Loss: -0.3885, test_loss 1.465843, test_acc: 76.7271
+save success
+Epoch: [10/300], cls_loss: 0.0840, transfer_loss: -0.8432, total_Loss: -0.7592, test_loss 1.492365, test_acc: 76.7960
+save success
+Epoch: [11/300], cls_loss: 0.0793, transfer_loss: -0.8433, total_Loss: -0.7640, test_loss 1.489415, test_acc: 76.9337
+0.16038602941176472
+Accuracy = 76.52% -> 76.79%
+
+********************
+*****    start knn!    *****
+********************
+*****    training finish! Start to test    *****
+Accuracy = 37.54% -> 40.54%
+
+Accuracy = 76.79% -> 77.27%
+
+save success
+Epoch: [12/300], cls_loss: 0.0660, transfer_loss: -0.8675, total_Loss: -0.3786, test_loss 1.466277, test_acc: 77.0484
+Epoch: [13/300], cls_loss: 0.0738, transfer_loss: -0.8453, total_Loss: -0.7715, test_loss 1.468370, test_acc: 76.7501
+Epoch: [14/300], cls_loss: 0.0724, transfer_loss: -0.8488, total_Loss: -0.7764, test_loss 1.459769, test_acc: 76.9796
+0.15418198529411764
+Accuracy = 76.70% -> 76.91%
+
+********************
+*****    start knn!    *****
+********************
+*****    training finish! Start to test    *****
+Accuracy = 37.26% -> 39.20%
+
+Accuracy = 76.91% -> 77.21%
+
+Epoch: [15/300], cls_loss: 0.0664, transfer_loss: -0.8745, total_Loss: -0.3935, test_loss 1.459712, test_acc: 76.8648
